@@ -63,12 +63,14 @@ document.querySelector("#slider").addEventListener("click", function() {
 
 
 document.querySelector("#vintage").addEventListener("click", function() {
-	console.log("Vintage");
-	video.addClass("oldSchool");
+	
+	video.classList.add("oldSchool");
+	console.log("Old School Style");
 });
 
 document.querySelector("#orig").addEventListener("click", function() {
-	console.log("Original");
+	
 	video.classList.remove("oldSchool");
+	console.log("Original");
 });
 
