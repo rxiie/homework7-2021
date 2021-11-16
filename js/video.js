@@ -63,7 +63,7 @@ document.querySelector("#slider").addEventListener("click", function() {
 
 
 document.querySelector("#vintage").addEventListener("click", function() {
-	console.log("Old School");
+	console.log("Vintage");
 	video.addClass("oldSchool");
 });
 
