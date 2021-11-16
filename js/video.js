@@ -29,15 +29,17 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 
 document.querySelector("#skip").addEventListener("click", function() {
-	console.log("Skip ahead");
-	video.currentTime += 15;
-	if (video.currentTime >= 67.403333) {
-		video.currentTime = 0;
-	}
-	video.loop = true;
-	console.log(video.currentTime)
-});
+	console.log("Original location " + video.currentTime)
+		if (video.currentTime < video.duration - 15) {
+			video.currentTime += 15;
+			console.log("New location " + video.currentTime)
+		}
+		else {
+			video.currentTime = 0;
+			console.log("New location " + video.currentTime)
+		}
 
+	});
 
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) {
