@@ -63,12 +63,12 @@ document.querySelector("#slider").addEventListener("click", function() {
 
 
 document.querySelector("#vintage").addEventListener("click", function() {
-	console.log("Old School Style");
+	console.log("Old School");
 	video.addClass("oldSchool");
 });
 
 document.querySelector("#orig").addEventListener("click", function() {
-	console.log("Remove Old School Style");
+	console.log("Original");
 	video.classList.remove("oldSchool");
 });
 
